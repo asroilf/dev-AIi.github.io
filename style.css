@@ -1,0 +1,15 @@
+* {
+    border: 1px solid red;
+}
+.navigation {
+    padding: 5px 25px;
+    display:flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 100px;
+}
+.nav {
+    text-align: center;
+    nav-down: current;
+}
