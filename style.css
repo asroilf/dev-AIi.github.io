@@ -1,5 +1,6 @@
 * {
     border: 1px solid red;
+    font-family:'Courier New', Courier, monospace;
 }
 .navigation {
     padding: 5px 25px;
@@ -12,4 +13,25 @@
 .nav {
     text-align: center;
     nav-down: current;
+}
+
+.main_face {
+
+    background-image: url('media/face_background.jpg');
+    height:700px;
+    display: grid;
+    vertical-align: auto;
+    align-items: center;
+}
+
+.first_title h1{
+    font-size: 400%;
+}
+.first_title{
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+.first_title h2{
+    font-size: 150%;
 }
