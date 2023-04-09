@@ -35,3 +35,34 @@
 .first_title h2{
     font-size: 150%;
 }
+
+.asliddin {
+    padding: 2%;
+    display: flex;
+}
+
+.asliddin img {
+    border-radius: 50%;
+    width: 23%;
+    height: 25%;
+    border: 1px solid #ddd;
+}
+
+.asliddin img:hover {
+    /* box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); */
+    box-shadow: 3px 5px 3px rgba(0, 140, 186, 0.5);
+  }
+.members_info {
+    padding-left: 10px;
+    margin-left: 10px;
+    display: fixed;
+}
+.name {
+    font-size: 70px;
+    padding-left: 3%;
+}
+
+.motto a{
+    font-style: italic;
+    color: #9e9e9e;
+}
