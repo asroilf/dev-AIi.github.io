@@ -1,6 +1,9 @@
 * {
+    background-image: url(media/R.jpeg);
+    background-attachment: fixed;
     border: 1px solid red;
     font-family:'Courier New', Courier, monospace;
+    color:white;
 }
 .navigation {
     padding: 5px 25px;
@@ -66,4 +69,9 @@
 .motto a{
     font-style: italic;
     color: #9e9e9e;
+}
+
+.iimg img {
+    width: 20%;
+    height: auto;
 }
