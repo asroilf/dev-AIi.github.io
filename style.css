@@ -1,23 +1,50 @@
 * {
+    background-image: url(media/Rr.jpeg);
+    background-attachment: fixed;
     border: 1px solid red;
     font-family:'Courier New', Courier, monospace;
+    color:black;
 }
 .navigation {
     padding: 5px 25px;
     display:flex;
     justify-content: space-between;
+    font-size: 150%;
 }
-.logo {
-    width: 100px;
+
+button {
+    border-radius: 10px;
+    margin:10px;
+    height: 30%;
+    width: auto;
+    font-size: large;
+}
+
+button:hover {
+    background-image: url(media/hh.jpg);
+    opacity: 0.5;
+}
+
+.logo img {
+    height: 150px;
+    width: auto;
 }
 .nav {
+    padding: 10px;
+    display:inline-flex;
     text-align: center;
+    align-items: center;
     nav-down: current;
+    vertical-align:center;
+}
+
+.nav a{
+    margin: 10px;
 }
 
 .main_face {
 
-    background-image: url('media/face_background.jpg');
+    /* background-image: url('media/face_background.jpg'); */
     height:700px;
     display: grid;
     vertical-align: auto;
@@ -36,19 +63,31 @@
     font-size: 150%;
 }
 
-.asliddin {
+.member{
+    border: 2px solid #9e9e9e;
     padding: 2%;
+    margin: 10%;
     display: flex;
+    background-color: rgba(204, 202, 186, 0.842);
+}
+.members_info:hover{
+    background-color: rgba(204, 202, 186, 0.842);
+}
+.member:hover {
+    /* background-image: url(media/hh.jpg); */
+    background-color: rgba(204, 202, 186, 0.842);
+    opacity: 1;
+    box-shadow: 1px solid #9e9e9e;
 }
 
-.asliddin img {
+.member img {
     border-radius: 50%;
     width: 23%;
     height: 25%;
     border: 1px solid #ddd;
 }
 
-.asliddin img:hover {
+.member img:hover {
     /* box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); */
     box-shadow: 3px 5px 3px rgba(0, 140, 186, 0.5);
   }
@@ -65,4 +104,27 @@
 .motto a{
     font-style: italic;
     color: #9e9e9e;
+}
+
+.iimg img {
+    width: 20%;
+    height: auto;
+}
+
+#evaluation{
+    padding: 10%;
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+
+table, tr, td {
+    font-size: large;
+    border: 1px solid #9e9e9e;
+}
+
+th{
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
 }
