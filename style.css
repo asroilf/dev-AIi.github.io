@@ -1,3 +1,6 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
 * {
     background-image: url(media/Rr.jpeg);
     background-attachment: fixed;
@@ -5,6 +8,7 @@
     font-family:'Courier New', Courier, monospace;
     color:black;
 }
+
 .navigation {
     padding: 5px 25px;
     display:flex;
@@ -116,10 +120,33 @@ button:hover {
     color: #9e9e9e;
 }
 
-.iimg img {
-    width: 20%;
-    height: auto;
-}
+
+.iimg {
+    height: 10%;
+    -webkit-mask-image: linear-gradient(to right, #0000, #000, #000, #0000);
+    
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    display: flex;
+    gap: var(--size-10);
+    align-items: start;
+    padding: var(--size-10);
+  }
+  
+  .iimg > img {
+    block-size: var(--size-15);
+    aspect-ratio: var(--ratio-square);
+    background-color: var(--surface-2);
+    border-radius: var(--radius-3);
+    box-shadow: var(--shadow-4);
+  }
+  
+  .iimg img:hover{
+      width: 30%;
+      height: auto;
+  }
+
+  
 
 #evaluation{
     max-height: max-content;

@@ -1,28 +1,14 @@
-import anime from 'animejs/lib/anime.es.js';
-const anime = require('animejs');
+var slideIndex = 0;
+carousel();
 
-anime({
-    targets: '.hello',
-    translateX: 250,
-    rotate: '1turn',
-    backgroundColor: '#FFF',
-    duration: 800
-});
-
-/*const scrollr = document.querySelector(".scroller");
-
-const scroller_time = new ScrollTimeline({
-    source: document.scrollingElement,
-    orientation: "block",
-    scrollOffsets: [CSS.percent(0), CSS.percent(100)],
-});
-
-scrollr.animate(
-    {
-        transform:['scaleX(0)', 'scale(100)'],
-    },
-    {
-        duration: 1,
-        timeline: scroller_time,
-    }
-);*/
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("hoc_pic");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
