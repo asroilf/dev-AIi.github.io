@@ -1,5 +1,5 @@
 @import "https://unpkg.com/open-props";
-@import "https://unpkg.com/open-props/normalize.min.css";
+/* @import "https://unpkg.com/open-props/normalize.min.css"; */
 
 * {
     background-image: url(media/Rr.jpeg);
@@ -55,24 +55,31 @@ button:hover {
     margin: 10px;
 }
 
-.main_face {
+#main_face {
 
     /* background-image: url('media/face_background.jpg'); */
+    margin-left: 20%;
+    margin-right: 20%;
     height:700px;
     display: grid;
-    vertical-align: auto;
-    align-items: center;
+    vertical-align: center; 
+    align-items: center; 
+    text-align-last: center;
 }
 
-.first_title h1{
+#first_title h1{
     font-size: 400%;
+    width: auto ;
 }
-.first_title{
-    display: grid;
+
+#first_title{
+    width: auto;
+    display: fixed;
     align-items: center;
     text-align: center;
 }
-.first_title h2{
+
+#first_title h2{
     font-size: 150%;
 }
 
@@ -124,16 +131,15 @@ button:hover {
 .iimg {
     height: 10%;
     -webkit-mask-image: linear-gradient(to right, #0000, #000, #000, #0000);
-    
     overflow-x: auto;
     overscroll-behavior-x: contain;
     display: flex;
     gap: var(--size-10);
-    align-items: start;
+    align-items:baseline;
     padding: var(--size-10);
   }
   
-  .iimg > img {
+  .iimg img {
     block-size: var(--size-15);
     aspect-ratio: var(--ratio-square);
     background-color: var(--surface-2);
