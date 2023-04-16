@@ -1,0 +1,130 @@
+
+body{
+    background-image: url(media/Rr.jpeg);
+    background-attachment: fixed;
+    /* border: 1px solid red; */
+    font-family:'Courier New', Courier, monospace;
+    color:black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+body{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+    /* .navigation{
+        display:flex;
+        justify-content: space-between;
+        font-size: 150%;
+        background-image: none; */
+
+  
+.scroll-cont{
+    position: fixed;
+    margin-top: 25px;
+    margin-left: -7px;
+    z-index: 1;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+}
+  
+#scroll-bar{
+    height: 8px;
+    background-color: #e7df03;
+    width: 0%;
+}
+
+ button{
+    height: 35%;
+    width: auto;
+    font-size: large;
+    border:1px solid white;
+    background-color: #efefef;
+    background-image: none;
+}
+
+button:hover{
+    background-image: url(media/hh.jpg);
+    border:#efefef;
+    box-shadow: 3px 3px rgb(252, 227, 0);
+}
+#navigation{
+    margin-left: -7px;
+    background-color: #efefef;
+    background-image: none;
+    overflow:  hidden;
+    position: fixed;
+    width: 100%;
+    transition: 0.4s;
+    top: 0;
+    z-index: 99;
+}
+#logo{
+    position:absolute;
+    background-color: #efefef;
+    background-image: none;
+}
+
+#logo img{
+    height: 19%;
+    width: 19%;
+    background-color: #efefef;
+    background-image: none;
+}
+#nav{
+    background-color: #efefef;
+    background-image: none;
+    float:right;
+}
+#nav a{
+    background-color: #efefef;
+    background-image: none;
+    float: left;
+    text-decoration: none;
+    color:black;
+    margin: 10px;
+}
+
+#nav a:hover{
+    background-color: white;
+} 
+
+.im{
+    margin-left:40%;
+}
+iframe{
+    margin-left:400px;
+}
+.intro, .mid{
+    border:2px solid black;
+}
+.intro, .mid{
+    padding: 10px;
+    margin:200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+    background-image:none;
+}
+.intro p, .mid p{
+    background-color: white;
+    background-image:none;
+
+}
+img{
+    width: 200px;
+    height: auto;
+}
+
+.btnhoc{
+    margin-left: 40%;
+    width: 150px;
+    border-radius: 10px;
+}

@@ -9,54 +9,91 @@ body{
     color:black;
 }
 
-.navigation{
-    padding: 5px 25px;
-    display:flex;
-    justify-content: space-between;
-    font-size: 150%;
-    background-image: none;
-
+body::-webkit-scrollbar {
+    display: none;
+}
+body{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.scroller{
-    height: 7px;
-    position:fixed;
-    inset:0 0 auto;
-    background-color: black;
-    background-image: none;
+    /* .navigation{
+        display:flex;
+        justify-content: space-between;
+        font-size: 150%;
+        background-image: none; */
+
+  
+.scroll-cont{
+    position: fixed;
+    margin-top: 40px;
+    margin-left: -7px;
+    z-index: 50;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+}
+  
+#scroll-bar{
+    height: 8px;
+    background-color: #e7df03;
+    width: 0%;
 }
 
-button{
-    border-radius: 10px;
-    margin:10px;
-    height: 30%;
+ button{
+    height: 35%;
     width: auto;
     font-size: large;
+    border:1px solid white;
+    background-color: #efefef;
+    background-image: none;
 }
 
 button:hover{
     background-image: url(media/hh.jpg);
-    opacity: 0.5;
-    border:#000;
+    border:#efefef;
+    box-shadow: 3px 3px rgb(252, 227, 0);
+}
+#navigation{
+    margin-left: -7px;
+    background-color: #efefef;
+    background-image: none;
+    overflow:  hidden;
+    position: fixed;
+    width: 100%;
+    transition: 0.4s;
+    top: 0;
+    z-index: 99;
+}
+#logo{
+    position:absolute;
+    background-color: #efefef;
+    background-image: none;
 }
 
-
-.logo img{
-    height: 150px;
-    width: auto;
+#logo img{
+    height: 19%;
+    width: 19%;
+    background-color: #efefef;
+    background-image: none;
 }
-.nav{
-    padding: 10px;
-    display:inline-flex;
-    text-align: center;
-    align-items: center;
-    nav-down: current;
-    vertical-align:center;
+#nav{
+    background-color: #efefef;
+    background-image: none;
+    float:right;
 }
-
-.nav a{
+#nav a{
+    background-color: #efefef;
+    background-image: none;
+    float: left;
+    text-decoration: none;
+    color:black;
     margin: 10px;
 }
+
+#nav a:hover{
+    background-color: white;
+} 
 
 #main_face{
 
@@ -100,6 +137,7 @@ button:hover{
 
 .member:hover{
     box-shadow: 5px 10px black;
+    transform: translate(-5px,-5px);
 }
 
 .member img{
@@ -232,3 +270,4 @@ td{
 .logos img:hover{
     opacity: 0.5;
 }
+
