@@ -121,7 +121,7 @@ button:hover{
     display: fixed;
 }
 .name{
-    font-size: 70px;
+    font-size: 65px;
     padding-left: 3%;
 }
 
@@ -143,19 +143,17 @@ button:hover{
   }
   
 .iimg img{
-block-size: var(--size-15);
-aspect-ratio: var(--ratio-square);
-background-color: var(--surface-2);
-border-radius: var(--radius-3);
-box-shadow: var(--shadow-4);
+    block-size: var(--size-15);
+    aspect-ratio: var(--ratio-square);
+    background-color: var(--surface-2);
+    border-radius: var(--radius-3);
+    box-shadow: var(--shadow-4);
 }
 
 .iimg img:hover{
     width: 30%;
     height: auto;
-}
-
-  
+}  
 
 #evaluation{
     max-height: max-content;
@@ -202,9 +200,33 @@ td{
 #infoo img{
     width: 23%;
     height: 25%;
-    border: 1px solid #ddd;
 }
-.logos img{
-    width: 10%;
+#infoo .in{
+    margin:5px;
+    margin-bottom: 1px;
+    padding: 5px;
+    position:relative;
+}
+
+.tx{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.tx p{
+    margin: 10px;
+}
+
+.in .logos{
+    margin-top: 50px;
+    margin-left: 5px;
+
+}
+
+#infoo .logos a img{
+    width: 5%;
     height: auto;
+}
+
+.logos img:hover{
+    opacity: 0.5;
 }
