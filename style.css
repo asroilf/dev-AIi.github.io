@@ -1,7 +1,7 @@
 @import "https://unpkg.com/open-props";
 /* @import "https://unpkg.com/open-props/normalize.min.css"; */
 
-* {
+body{
     background-image: url(media/Rr.jpeg);
     background-attachment: fixed;
     /* border: 1px solid red; */
@@ -9,14 +9,16 @@
     color:black;
 }
 
-.navigation {
+.navigation{
     padding: 5px 25px;
     display:flex;
     justify-content: space-between;
     font-size: 150%;
+    background-image: none;
+
 }
 
-.scroller {
+.scroller{
     height: 7px;
     position:fixed;
     inset:0 0 auto;
@@ -24,7 +26,7 @@
     background-image: none;
 }
 
-button {
+button{
     border-radius: 10px;
     margin:10px;
     height: 30%;
@@ -32,17 +34,18 @@ button {
     font-size: large;
 }
 
-button:hover {
+button:hover{
     background-image: url(media/hh.jpg);
     opacity: 0.5;
+    border:#000;
 }
 
 
-.logo img {
+.logo img{
     height: 150px;
     width: auto;
 }
-.nav {
+.nav{
     padding: 10px;
     display:inline-flex;
     text-align: center;
@@ -55,7 +58,7 @@ button:hover {
     margin: 10px;
 }
 
-#main_face {
+#main_face{
 
     /* background-image: url('media/face_background.jpg'); */
     margin-left: 20%;
@@ -95,29 +98,29 @@ button:hover {
     background-image: none;
 }
 
-.member:hover {
+.member:hover{
     box-shadow: 5px 10px black;
 }
 
-.member img {
+.member img{
     border-radius: 50%;
     width: 23%;
     height: 25%;
     border: 1px solid #ddd;
 }
 
-.member img:hover {
+.member img:hover{
     /* box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); */
     box-shadow: 3px 5px 3px rgba(68, 112, 83, 0.5);
     background-image: none;
   }
 
-.members_info {
+.members_info{
     padding-left: 10px;
     margin-left: 10px;
     display: fixed;
 }
-.name {
+.name{
     font-size: 70px;
     padding-left: 3%;
 }
@@ -128,29 +131,29 @@ button:hover {
 }
 
 
-.iimg {
+.iimg{
     height: 10%;
     -webkit-mask-image: linear-gradient(to right, #0000, #000, #000, #0000);
     overflow-x: auto;
     overscroll-behavior-x: contain;
     display: flex;
     gap: var(--size-10);
-    align-items:baseline;
+    align-items: baseline;
     padding: var(--size-10);
   }
   
-  .iimg img {
-    block-size: var(--size-15);
-    aspect-ratio: var(--ratio-square);
-    background-color: var(--surface-2);
-    border-radius: var(--radius-3);
-    box-shadow: var(--shadow-4);
-  }
-  
-  .iimg img:hover{
-      width: 30%;
-      height: auto;
-  }
+.iimg img{
+block-size: var(--size-15);
+aspect-ratio: var(--ratio-square);
+background-color: var(--surface-2);
+border-radius: var(--radius-3);
+box-shadow: var(--shadow-4);
+}
+
+.iimg img:hover{
+    width: 30%;
+    height: auto;
+}
 
   
 
@@ -171,9 +174,37 @@ td{
     height: 50px;
 }
 
-.foot {
-    display:block;
-    height: 100px;
+.foot{
+    display: flex;
+    position:relative;
+    align-content: center;
+    margin: -5px;
+    height:120ex;
     background-color: black;
     background-image: none;
+    color: white;
+    align-items: center;
+    
+}
+
+.txt{
+}
+
+#infoo{
+    margin: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    border: 2px solid #000;
+    background-color: white;
+    background-image: none;
+}
+
+#infoo img{
+    width: 23%;
+    height: 25%;
+    border: 1px solid #ddd;
+}
+.logos img{
+    width: 10%;
+    height: auto;
 }

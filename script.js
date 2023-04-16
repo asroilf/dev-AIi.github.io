@@ -1,14 +1,10 @@
-let slideIndex = 0;
-carousel();
+let nbar = document.getElementById("navbar");
+let still = nbar.offsetTop;
 
-function slide() {
-  let i;
-  let a = document.getElementsByClassName("hoc_pic");
-  for (i = 0; i < a.length; i++) {
-    a[i].style.display = "none";
+window.onscroll = function(){
+  if(window.pageYOffset >= still){
+    nbar.classList.add("still")
+  }else{
+    nbar.classList.remove("still");
   }
-  slideIndex++;
-  if (slideIndex > a.length) {slideIndex = 1}
-  a[slideIndex-1].style.display = "block";
-  setTimeout(slide, 2000); // Change image every 2 seconds
-}
+};
