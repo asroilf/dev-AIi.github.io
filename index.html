@@ -10,26 +10,29 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Eagles</title>     
+        <script src="scrit.js"></script>
         <link rel="icon" type="image/png" href="media/logo_with250px.png"/>
         <link href="style.css" rel="stylesheet">
         <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-        <script scr="script.js" defer></script>
     </head>
 
     <body>
-        <div class="scroller"></div>
         <header>
-            <div class="navigation">
-                <div class="logo"><img src="media/logo_250px0opocity.png" class="logo"></ing></div>
-                <div class="nav">
+
+            <div id="navigation">
+                <div id="logo"><img src="media/logo_250px0opocity.png" class="logo"></ing></div>
+                <div id="nav">
                     <button><a href="#team_members">Team members</a></button>
-                    <button><a href="#hourOfCode">Hour of code</a></button>
-                    <button><a href="#evaluation">Evaluation table</a></button>
+                    <button><a href="hoc.html">Hour of code</a></button>
+                    <button><a href="website.html">Evaluation table</a></button>
                 </div>
             </div>
+            <div class="scroll-cont">
+              <div id="scroll-bar"></div>
+            </div>
 
-            <div class="main_face">
-                <div class="first_title">
+            <div id="main_face">
+                <div id="first_title">
                     <h1>Hello, welcome to our website!</h1>
                     <h2>Use the navigation bar above or just scroll down to see what we have here.</h2>
                 </div>
@@ -37,11 +40,11 @@
         </header>
         
         <div id="team_members">
-            <div class="member">
+            <div class="member" id="asliddin">
                 <img src="media/my.jpg" class="ai_pic">
                 <div class="members_info">
-                    <h2 class="name">Asliddin Isroilov</h2>
-                    <p class="disc">Fresh year iternational student in ADA University. He studies Bechelors of Science in Computer Science and his prior goal is to make the world better place.</p>
+                    <a href="ai_.html"><h2 class="name">Asliddin Isroilov</h2></a>
+                    <p class="disc">Fresh year iternational student at ADA University.</p>
                     <h3>Hobbies:</h3>
                     <ul>
                         <li>Calisthenics</li>
@@ -53,10 +56,10 @@
                 </div>
             </div>
 
-            <div class="member">
+            <div class="member" id="kenan">
                 <img src="media/avatar.png" class="kg_pic">
                 <div class="members_info">
-                    <h2 class="name">Kenan Gulmamedov</h2>  <!-- ---edit here-->
+                    <a href="kg_.html"><h2 class="name">Kenan Gulmamedov</h2></a>  <!-- ---edit here-->
                     <p class="disc">Student at ADA University.The faculty is IT.His motherland is Russia.</p> <!--edit here-->
                     <h3>Hobbies:</h3>
                     <ul>
@@ -70,10 +73,10 @@
                 </div>
             </div>
 
-            <div class="member">
+            <div class="member" id="elmir">
                 <img src="media/avatar.png" class="ea_pic">
                 <div class="members_info">
-                    <h2 class="name">Elmir Abdurrahmanov</h2>
+                    <a href="ea_.html"><h2 class="name">Elmir Abdurrahmanov</h2></a>
                     <p class="disc">Student at ADA University. His major is computer science.</p>
                     <h3>Hobbies:</h3>
                     <ul>
@@ -114,38 +117,6 @@
                 
             </div>
         </div>
-
-        <div id="evaluation">
-            <table>
-                <tr>
-                    <th>Participants</th>
-                    <th>Contribution</th>
-                    <th>Evaluation</th>
-                </tr>
-                <tr>
-                    <td>Asliddin Isroilov</td>
-                    <td>Designed some frontEnd side and backEnd side of a website</td>
-                    <td>34%</td>
-                </tr>
-                <tr>
-                    <td>Kenan Gulmammadov</td>
-                    <td>Came up with a new ideas on designing and designed the frontEnd side of a website</td>
-                    <td>33%</td>
-                </tr>
-                <tr>
-                    <td>Elmir Abdurrahmanov</td>
-                    <td>Offered the unusual animations and developed frontEnd side of a website</td>
-                    <td>33%</td>
-                </tr>
-            </table>
-        </div>
-        <footer>
-            <div class="foot">
-                
-            </div>
-        </footer>
     </body>
     
-    <!-- <script src="script.js"> -->
-    </script>
 </html>
